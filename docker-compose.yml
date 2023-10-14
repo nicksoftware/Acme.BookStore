@@ -1,0 +1,20 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+    db:
+        image: postgres
+        ports:
+            - '5432:5432'
+        environment:
+            POSTGRES_DB: BookStore
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: myPassword
+        volumes:
+            - 'book-store-db:/var/lib/postgresql/data'
+networks:
+    book-store:
+        driver: bridge
+volumes:
+    book-store-db:
+        driver: local

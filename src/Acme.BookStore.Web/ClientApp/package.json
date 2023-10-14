@@ -1,0 +1,27 @@
+{
+    "name": "book-store",
+    "version": "1.0.0",
+    "description": "",
+    "main": "vite.config.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@inertiajs/react": "^1.0.0",
+        "@vitejs/plugin-react": "^3.0.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.4.0",
+        "laravel-vite-plugin": "^0.7.4",
+        "postcss": "^8.4.31",
+        "postcss-preset-mantine": "^1.8.0",
+        "postcss-simple-vars": "^7.0.1",
+        "prettier": "^3.0.0",
+        "prettier-plugin-tailwindcss": "^0.4.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^3.2.1",
+        "vite": "^4.0.0"
+    }
+}
