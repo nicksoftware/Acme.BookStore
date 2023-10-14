@@ -1,7 +1,7 @@
 export default function IndexPage(props) {
     var l = abp.localization.getResource('BookStore');
     return (
-        <div className="card">
+        <article className="card">
             <div className="card-header">
                 <h1>{l('Welcome')}</h1>
             </div>
@@ -9,6 +9,6 @@ export default function IndexPage(props) {
                 <p className="text">{l('LongWelcomeMessage')}</p>
                 <code>Dotnet Version : {props.runtime}</code>
             </div>
-        </div>
+        </article>
     );
 }
