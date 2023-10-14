@@ -4,14 +4,14 @@ import laravel from 'laravel-vite-plugin';
 import path from 'path';
 import { mkdirSync } from 'fs';
 
-const outDir = '../wwwroot/build';
+const outDir = './wwwroot/build';
 
 mkdirSync(outDir, { recursive: true });
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['src/App.jsx'],
+            input: ['Views/App.jsx'],
             publicDirectory: outDir,
             refresh: true,
         }),
@@ -19,7 +19,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src'),
+            '@': path.resolve(__dirname, 'Views'),
         },
     },
     build: {

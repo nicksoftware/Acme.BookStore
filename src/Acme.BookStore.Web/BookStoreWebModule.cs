@@ -102,6 +102,7 @@ public class BookStoreWebModule : AbpModule
     {
         services.AddInertia();
 
+
         services.AddViteHelper(opt =>
         {
             opt.PublicDirectory = "wwwroot";
